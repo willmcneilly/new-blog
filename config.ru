@@ -1,5 +1,7 @@
+require 'bundler'
+Bundler.setup
 
-require 'toto'
+require  'toto'
 
 # Rack config
 use Rack::Static, :urls => ['/css', '/js', '/images', '/favicon.ico'], :root => 'public'
@@ -23,7 +25,7 @@ toto = Toto::Server.new do
   # set :date,      lambda {|now| now.strftime("%d/%m/%Y") }  # date format for articles
   # set :markdown,  :smart                                    # use markdown + smart-mode
   # set :disqus,    false                                     # disqus id, or false
-  # set :summary,   :max => 150, :delim => /~/                # length of article summary and delimiter
+   set :summary,   :max => 150, :delim => /~/                # length of article summary and delimiter
   # set :ext,       'txt'                                     # file extension for articles
   # set :cache,      28800                                    # cache duration, in seconds
 

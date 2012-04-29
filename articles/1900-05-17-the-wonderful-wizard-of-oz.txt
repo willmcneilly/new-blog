@@ -1,7 +1,12 @@
 title: The Wonderful Wizard of Oz
 author: Lyman Frank Baum
 date: 1900/05/17
+mysummary: This is this the summary of the article
+type: article
 
-Dorothy lived in the midst of the great Kansas prairies, with Uncle Henry, 
-who was a farmer, and Aunt Em, who was the farmer's wife.
+Mathematics played a key role in Pythagorean philosophy. The dictum of the Pythagorean school was All is number, with everything having a number as its essence; for example: one is for reason, two is for female and opinion, three is for male and harmony, and so on. The obsession with mathematics and numbers allowed the Pythagoreans to give the world around them more structure, a structure that made more sense than the other forms of mystical metaphysics present at the time.
+
+Modern art and design movements that sprang up at the beginning of the last century have moved their craft in a direction dictated by structured reason over free emotion. The key principles of modern design were to eliminate everything unnecessary, use materials that help the item function better, use simple shapes that are easy to manufacture en masse and above all focus on function over form. The ultimate—and therefore most beautiful—form was to be arrived at by making an item fit for its purpose. Superfluous decoration was now the enemy and so had no place in modern design.
+
+But who is the judge of what is superfluous and what is useful—by what criteria is this call made? The function of a cup is to hold a beverage, they may say, and so this is our criteria: how well does the item perform its task? The problem here is that decorations also serve a purpose—implemented well they enrich our experience using the item. Beautiful things are beautiful because we enjoy seeing them—it is this subjective experience that makes the object beautiful, not an objective attribute. Decoration does not help the cup perform its function, but what it does is make the performance of that function more pleasant in the hands of a human being.
 

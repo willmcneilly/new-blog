@@ -1,0 +1,7 @@
+title: Will's test post
+author: Lyman Frank Baum
+date: 2012/03/13
+mysummary: This is a summary of my new article
+type: note
+
+Yoyo yo dawg

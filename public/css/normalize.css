@@ -1,0 +1,71 @@
+/* line 12, ../../sass/normalize.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 23, ../../sass/normalize.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 26, ../../sass/normalize.scss */
+body {
+  line-height: 1;
+}
+
+/* line 29, ../../sass/normalize.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 32, ../../sass/normalize.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 36, ../../sass/normalize.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* remember to define visible focus styles! 
+:focus {
+  outline: ?????;
+} */
+/* remember to highlight inserts somehow! */
+/* line 47, ../../sass/normalize.scss */
+ins {
+  text-decoration: none;
+}
+
+/* line 50, ../../sass/normalize.scss */
+del {
+  text-decoration: line-through;
+}
+
+/* line 54, ../../sass/normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}

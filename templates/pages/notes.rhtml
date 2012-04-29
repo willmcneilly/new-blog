@@ -1,0 +1,3 @@
+<% @articles.select {|a| a[:type] == 'note' }[0...10].each do |article| %>
+    <a href="<%= article.path %>"><%= article.title %></a>
+<% end %>

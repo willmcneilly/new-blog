@@ -1,18 +1,35 @@
 <!doctype html>
 <html>
   <head>
+    <link rel="stylesheet" type="text/css" href="/css/reset.css">
     <link rel="stylesheet" type="text/css" href="/css/main.css">
     <link rel="alternate" type="application/atom+xml" title="<%= title %> - feed" href="/index.xml" />
+    <script type="text/javascript" src="http://use.typekit.com/nlh3zli.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
     <title><%= title %></title>
   </head>
   <body>
-    <section>
-      <%= yield %> 
-    </section>
-    <footer>
-      powered by <a href="http://cloudhead.io/toto">toto</a>
-    </footer>
+    <div class="wrapper">
+      <header class="global-header">
+        <div class="brand-logo-container">
+          <h1>The Blog of Will McNeilly</h1>
+        </div>
+        <nav class="global-nav"> 
+          <ul>
+            <li><a href="/about">Will McNeilly:</a></li>
+            <li><a href="/notes">Notes</a></li>
+            <li><a href="/articles">Articles</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section>
+        <%= yield %> 
+      </section>
+      <footer>
+        
+      </footer>
+    </div>
   </body>
 </html>
 
