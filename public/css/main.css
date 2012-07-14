@@ -25,40 +25,41 @@ h1, h2, h3, h4, h5, h6 {
 
 /* line 28, ../../sass/main.scss */
 h1 {
-  font-size: 48px;
-  line-height: 60px;
-  margin-bottom: 32px;
+  font-size: 60px;
+  line-height: 72px;
+  margin-bottom: 72px;
+  font-weight: 400;
 }
 
-/* line 34, ../../sass/main.scss */
+/* line 35, ../../sass/main.scss */
 h2 {
   font-size: 32px;
   line-height: 48px;
 }
 
-/* line 39, ../../sass/main.scss */
+/* line 40, ../../sass/main.scss */
 h3 {
   font-size: 26px;
   line-height: 36px;
 }
 
-/* line 44, ../../sass/main.scss */
+/* line 45, ../../sass/main.scss */
 a {
   color: #e24718;
 }
 
-/* line 48, ../../sass/main.scss */
+/* line 49, ../../sass/main.scss */
 a:focus {
   outline: thin dotted;
 }
 
-/* line 53, ../../sass/main.scss */
+/* line 54, ../../sass/main.scss */
 a:hover,
 a:active {
   outline: 0;
 }
 
-/* line 58, ../../sass/main.scss */
+/* line 59, ../../sass/main.scss */
 p,
 pre {
   margin: 0 0 28px 0;
@@ -67,25 +68,25 @@ pre {
 /* =============================================================================
    Scaffolding
    ========================================================================== */
-/* line 67, ../../sass/main.scss */
+/* line 68, ../../sass/main.scss */
 .wrapper {
   margin: 168px 72px;
-  width: 720px;
+  width: 768px;
   overflow: auto;
 }
 
-/* line 75, ../../sass/main.scss */
+/* line 76, ../../sass/main.scss */
 .content {
   width: 640px;
 }
 
-/* line 79, ../../sass/main.scss */
+/* line 80, ../../sass/main.scss */
 .global-header {
   width: auto;
   overflow: hidden;
 }
 
-/* line 84, ../../sass/main.scss */
+/* line 85, ../../sass/main.scss */
 .brand-logo-container {
   width: 40px;
   height: 40px;
@@ -96,7 +97,7 @@ pre {
   margin-bottom: 120px;
   float: left;
 }
-/* line 93, ../../sass/main.scss */
+/* line 94, ../../sass/main.scss */
 .brand-logo-container h1 {
   display: block;
   text-indent: -9999px;
@@ -113,45 +114,58 @@ pre {
   transform: rotate(45deg);
 }
 
-/* line 106, ../../sass/main.scss */
+/* line 107, ../../sass/main.scss */
 .global-nav {
-  margin-left: 192px;
+  margin-right: 72px;
   display: block;
   float: right;
-  width: 400px;
+  width: auto;
 }
-/* line 111, ../../sass/main.scss */
+/* line 113, ../../sass/main.scss */
 .global-nav li {
   float: left;
   display: block;
 }
-/* line 117, ../../sass/main.scss */
+/* line 119, ../../sass/main.scss */
 .global-nav a {
   text-decoration: none;
   display: block;
   color: #eee;
-  padding: 3px 10px 0 10px;
+  padding: 3px 12px 0 12px;
+  position: relative;
+  width: 72px;
+  text-align: center;
+  height: 25px;
 }
-/* line 122, ../../sass/main.scss */
+/* line 130, ../../sass/main.scss */
 .global-nav a:hover {
-  background-color: #fff;
-  color: #e24718;
+  background-color: #eee;
+  color: #333;
 }
-/* line 127, ../../sass/main.scss */
-.global-nav a h1 {
-  font-size: 18px;
-  line-height: 28px;
-  font-weight: 600;
-  color: #EEE;
+/* line 133, ../../sass/main.scss */
+.global-nav a:hover:after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  display: block;
+  position: absolute;
+  top: 23px;
+  left: 44px;
+  background-color: #eee;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
-/* line 137, ../../sass/main.scss */
+/* line 148, ../../sass/main.scss */
 .article-date {
   font-size: 16px;
   color: #666;
 }
 
-/* line 143, ../../sass/main.scss */
+/* line 154, ../../sass/main.scss */
 .mast {
   background-color: #333;
   font-size: 14px;
@@ -162,9 +176,10 @@ pre {
   width: 100%;
   top: 0px;
   z-index: 100;
+  padding-right: 72px;
 }
 
-/* line 157, ../../sass/main.scss */
+/* line 169, ../../sass/main.scss */
 .logo-outer {
   width: 26px;
   height: 26px;
@@ -179,7 +194,7 @@ pre {
   left: 60px;
 }
 
-/* line 172, ../../sass/main.scss */
+/* line 184, ../../sass/main.scss */
 .logo-inner {
   display: none;
   text-indent: -9999px;
@@ -191,27 +206,58 @@ pre {
   left: 12px;
 }
 
-/* line 183, ../../sass/main.scss */
+/* line 195, ../../sass/main.scss */
 .main-content {
   width: 528px;
   position: relative;
+  margin-right: 48px;
   float: right;
 }
 
-/* line 190, ../../sass/main.scss */
+/* line 202, ../../sass/main.scss */
 .meta {
   float: left;
   width: 192px;
 }
 
-/* line 195, ../../sass/main.scss */
+/* line 207, ../../sass/main.scss */
 .article-header {
-  margin-bottom: 72px;
+  margin-left: 192px;
+}
+/* line 212, ../../sass/main.scss */
+.article-header h1 {
+  letter-spacing: -1.5px;
 }
 
-/* line 199, ../../sass/main.scss */
+/* line 217, ../../sass/main.scss */
 .lead-in {
   color: #666;
   font-size: 22px;
   line-height: 36px;
+}
+
+/* line 224, ../../sass/main.scss */
+.index-post {
+  margin-bottom: 48px;
+  overflow: auto;
+}
+/* line 227, ../../sass/main.scss */
+.index-post .article-header h1 {
+  font-size: 36px;
+  line-height: 48px;
+  margin-bottom: 24px;
+  letter-spacing: normal;
+}
+/* line 232, ../../sass/main.scss */
+.index-post .article-header h1 a {
+  text-decoration: none;
+}
+/* line 236, ../../sass/main.scss */
+.index-post .lead-in {
+  font-size: 16px;
+  line-height: 28px;
+}
+/* line 240, ../../sass/main.scss */
+.index-post .article-date {
+  font-size: 14px;
 }

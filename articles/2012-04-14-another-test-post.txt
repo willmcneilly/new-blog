@@ -1,6 +1,6 @@
-title: The Wonderful Wizard of Oz
+title: Another Test Post
 author: Lyman Frank Baum
-date: 1900/05/17
+date: 2012/04/14
 mysummary: This is a summary of my new article, adding a bit more meat to this post. There should always be about, nearly 140 characters. Something Tweetable
 type: article
 

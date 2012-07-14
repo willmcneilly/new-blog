@@ -26,9 +26,10 @@ h1, h2, h3, h4, h5, h6 {
 
 
 h1 {
-  font-size: 48px;
-  line-height: 60px;
-  margin-bottom: 32px;
+  font-size: 60px;
+  line-height: 72px;
+  margin-bottom: 72px;
+  font-weight: 400;
 }
 
 h2 {
@@ -66,7 +67,7 @@ pre {
 
 .wrapper {
   margin: 168px 72px;
-  width: 720px;
+  width: 768px;
   overflow: auto;
 }
 
@@ -104,10 +105,11 @@ pre {
 }
 
 .global-nav {
-  margin-left: 192px;
+  //margin-left: 192px;
+  margin-right: 72px;
   display: block;
   float:right;
-  width: 400px;
+  width: auto;
   li {
     float: left;
     display: block;
@@ -118,18 +120,27 @@ pre {
     text-decoration: none;
     display: block;
     color: #eee;
-    padding: 3px 10px 0 10px;
-    &:hover {
-      background-color: #fff;
-      color: $brandOrange;
-    }
+    padding: 3px 12px 0 12px;
+    position: relative;
+    width: 72px;
+    text-align: center;
+    height: 25px;
 
-    h1 {
-      font-size: 18px;
-      line-height: 28px;
-      font-weight: 600;
-      color: #EEE;
-      //text-transform: uppercase;
+
+    &:hover {
+      background-color: #eee;
+      color: #333;
+      &:after {
+        content: "";
+        width: 10px;
+        height: 10px;
+        display: block;
+        position: absolute;
+        top: 23px;
+        left: 44px;
+        background-color: #eee;
+        @include rotate(45deg);
+      }
     }
   }
 }
@@ -151,6 +162,7 @@ pre {
   width: 100%;
   top:0px;
   z-index: 100;
+  padding-right: 72px;
 }
 
 
@@ -183,7 +195,7 @@ pre {
 .main-content {
   width: 528px;
   position: relative;
-  //margin-left: 192px;
+  margin-right: 48px;
   float: right;
 }
 
@@ -193,12 +205,40 @@ pre {
 }
 
 .article-header {
-  margin-bottom: 72px;
+  //margin-bottom: 72px;
+  margin-left: 192px;
+  //position: relative;
+  //left: 24px;
+  h1 {
+    letter-spacing: -1.5px;
+  }
 }
 
 .lead-in {
   color:#666;
   font-size: 22px;
   line-height: 36px;
+}
+
+
+.index-post {
+  margin-bottom: 48px;
+  overflow: auto;
+  .article-header h1 {
+    font-size: 36px;
+    line-height: 48px;
+    margin-bottom: 24px;
+    letter-spacing: normal;
+    a {
+      text-decoration: none;
+    }
+  }
+  .lead-in {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .article-date {
+    font-size: 14px;
+  }
 }
 
