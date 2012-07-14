@@ -223,19 +223,29 @@ pre {
 
 .index-post {
   margin-bottom: 48px;
+  padding-bottom: 48px;
   overflow: auto;
+  border-bottom: 2px dotted #eee;
+
+  .article-header {
+    margin-left: 0;
+  }
   .article-header h1 {
-    font-size: 36px;
-    line-height: 48px;
+    //font-size: 36px;
+    //line-height: 48px;
     margin-bottom: 24px;
     letter-spacing: normal;
     a {
       text-decoration: none;
     }
   }
+
+  .main-content {
+    float: left;
+  }
   .lead-in {
-    font-size: 16px;
-    line-height: 28px;
+    //font-size: 16px;
+    //line-height: 28px;
   }
   .article-date {
     font-size: 14px;

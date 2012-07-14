@@ -239,25 +239,28 @@ pre {
 /* line 224, ../../sass/main.scss */
 .index-post {
   margin-bottom: 48px;
+  padding-bottom: 48px;
   overflow: auto;
+  border-bottom: 2px dotted #eee;
 }
-/* line 227, ../../sass/main.scss */
+/* line 230, ../../sass/main.scss */
+.index-post .article-header {
+  margin-left: 0;
+}
+/* line 233, ../../sass/main.scss */
 .index-post .article-header h1 {
-  font-size: 36px;
-  line-height: 48px;
   margin-bottom: 24px;
   letter-spacing: normal;
 }
-/* line 232, ../../sass/main.scss */
+/* line 238, ../../sass/main.scss */
 .index-post .article-header h1 a {
   text-decoration: none;
 }
-/* line 236, ../../sass/main.scss */
-.index-post .lead-in {
-  font-size: 16px;
-  line-height: 28px;
+/* line 243, ../../sass/main.scss */
+.index-post .main-content {
+  float: left;
 }
-/* line 240, ../../sass/main.scss */
+/* line 250, ../../sass/main.scss */
 .index-post .article-date {
   font-size: 14px;
 }

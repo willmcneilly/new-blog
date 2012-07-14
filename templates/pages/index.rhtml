@@ -1,14 +1,12 @@
-<% for article in articles[0...3] %>
+<% for article in articles[0...1] %>
 <article class="index-post">
   <header class="article-header">
     <h1><a href="<%= article.path %>"><%= article.title %></a></h1>
   </header>
   <section class="main-content">
     <p class="lead-in"><%= article.mysummary %></p>
+    <a href="<%= article.path %>" class="read-more">Read More &raquo;</a>
   </section>
-  <footer class="meta">
-    <span class="article-date"><%= article.date %></span>
-  </footer>
 </article>
 <% end %>
 
@@ -16,6 +14,16 @@
 
 
 <section id="archives">
-  <%= archives[3..-1] %>
+  <h2>Recent Posts</h2>
+  <ul class="recent-posts">   
+    <% for article in articles[1..-1] %>
+    <li>
+      <a href="<%= article.path %>">
+        <%= article.date %>
+        <%= article.title %>
+      </a> 
+    </li>
+    <% end %>
+  </ul>
 </section>
 
