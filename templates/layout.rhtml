@@ -10,19 +10,19 @@
     <title><%= title %></title>
   </head>
   <body>
+    <header class="mast">
+      <div class="logo-outer">
+        <div class="logo-inner"></div>
+      </div>
+      <nav class="global-nav">
+        <ul>
+          <li><a href="/about">About Will</a></li>
+          <li><a href="/about">Articles</a></li>
+          <li><a href="/about">Notes</a></li>
+        </ul>
+      </nav>
+    </header>
     <div class="wrapper">
-      <header class="global-header">
-        <div class="brand-logo-container">
-          <h1>The Blog of Will McNeilly</h1>
-        </div>
-        <nav class="global-nav"> 
-          <ul>
-            <li><a href="/about">Will McNeilly:</a></li>
-            <li><a href="/notes">Notes</a></li>
-            <li><a href="/articles">Articles</a></li>
-          </ul>
-        </nav>
-      </header>
       <section>
         <%= yield %> 
       </section>

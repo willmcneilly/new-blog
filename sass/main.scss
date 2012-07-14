@@ -6,8 +6,8 @@
    ========================================================================== */
 
 body {
-    line-height: 32px;
-    font-size: 20px;
+    line-height: 28px;
+    font-size: 16px;
     color: $text;
 }
 
@@ -26,8 +26,8 @@ h1, h2, h3, h4, h5, h6 {
 
 
 h1 {
-  font-size: 36px;
-  line-height: 48px;
+  font-size: 48px;
+  line-height: 60px;
   margin-bottom: 32px;
 }
 
@@ -56,7 +56,7 @@ a:active {
 
 p,
 pre {
-    margin: 0 0 34px 0;
+    margin: 0 0 28px 0;
 }
 
 
@@ -65,19 +65,14 @@ pre {
    ========================================================================== */
 
 .wrapper {
-  margin: 80px 0px;
-  width: 940px;
+  margin: 168px 72px;
+  width: 720px;
   overflow: auto;
 }
 
-.meta {
-  float:left;
-  width: 220px;
-  padding-left: 80px;
-}
+
 
 .content {
-  float: right;
   width: 640px;
 }
 
@@ -109,29 +104,101 @@ pre {
 }
 
 .global-nav {
-  float: left;
-  width: 640px;
-  ul li {
-    display: inline;
-    margin-right: 40px;
-    a {
-      text-transform: uppercase;
-      text-decoration: none;
-      line-height: 40px;
-      font-size: 18px;
-      color: $text;
+  margin-left: 192px;
+  display: block;
+  float:right;
+  width: 400px;
+  li {
+    float: left;
+    display: block;
+    //padding-top: 3px;
+    //margin-right: 10px;
+  }
+  a {
+    text-decoration: none;
+    display: block;
+    color: #eee;
+    padding: 3px 10px 0 10px;
+    &:hover {
+      background-color: #fff;
+      color: $brandOrange;
     }
-    &:first-child {
-      a {
-        color: $brandOrange;
-      }
+
+    h1 {
+      font-size: 18px;
+      line-height: 28px;
+      font-weight: 600;
+      color: #EEE;
+      //text-transform: uppercase;
     }
   }
 }
 
 .article-date {
-  font-size: 14px;
+  font-size: 16px;
+  color:#666;
 }
 
 
+.mast {
+  background-color: #333;
+  font-size: 14px;
+  //font-style: italic;
+  color: #EEE;
+  padding-left: 72px;
+  height:28px;
+  position: fixed;
+  width: 100%;
+  top:0px;
+  z-index: 100;
+}
+
+
+.logo-outer {
+  width: 26px;
+  height: 26px;
+  //width: 18px;
+  //height: 18px;
+  background-color: $brandOrange;
+  position: absolute;
+  @include rotate(45deg);
+  top:15px;
+  //top: 19px;
+  left: 60px;
+  //left: 254px;
+
+}
+
+.logo-inner {
+    display: none;
+    text-indent: -9999px;
+    width: 5px;
+    height: 5px;
+    background-color: #fff;
+    position: absolute;
+    top: 12px;
+    left: 12px;    
+}
+
+.main-content {
+  width: 528px;
+  position: relative;
+  //margin-left: 192px;
+  float: right;
+}
+
+.meta {
+  float: left;
+  width: 192px;
+}
+
+.article-header {
+  margin-bottom: 72px;
+}
+
+.lead-in {
+  color:#666;
+  font-size: 22px;
+  line-height: 36px;
+}
 
