@@ -310,3 +310,9 @@ pre {
   display: block;
   text-decoration: none;
 }
+/* line 295, ../../sass/main.scss */
+.recent-posts .post-date {
+  color: #666;
+  display: inline-block;
+  width: 60px;
+}

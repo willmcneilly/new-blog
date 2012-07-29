@@ -19,7 +19,7 @@
     <% for article in articles[1..-1] %>
     <li>
       <a class="post-link" href="<%= article.path %>">
-        <%= Time.strptime(article.date, "%d %B %Y").strftime("%d %b") %>
+        <date class="post-date"><%= Time.strptime(article.date, "%d %B %Y").strftime("%d %b") %></date>
         <%= article.title %>
       </a> 
     </li>
