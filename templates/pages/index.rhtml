@@ -18,8 +18,8 @@
   <ul class="recent-posts">   
     <% for article in articles[1..-1] %>
     <li>
-      <a href="<%= article.path %>">
-        <%= article.date %>
+      <a class="post-link" href="<%= article.path %>">
+        <%= Time.strptime(article.date, "%d %B %Y").strftime("%d %b") %>
         <%= article.title %>
       </a> 
     </li>
