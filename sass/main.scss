@@ -186,12 +186,25 @@ pre {
     margin: 72px 72px;
     width: 768px;
     color: #eee;
+    .small-print {
+      width: 528px;
+    }
+    .social-links {
+      width: 240px;
+    }
     small {
       font-size: 12px;
     }
   }
 }
 
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
 
 .logo-outer {
   width: 26px;
