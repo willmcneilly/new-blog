@@ -183,17 +183,21 @@ pre {
     left: 254px;
   }
   .global-footer-inner {
-    margin: 72px 72px;
+    margin: 96px 72px;
     width: 768px;
     color: #eee;
+    overflow: auto;
     .small-print {
       width: 528px;
     }
     .social-links {
       width: 240px;
+      a {
+        text-decoration: none;
+      }
     }
     small {
-      font-size: 12px;
+      //font-size: 12px;
     }
   }
 }
