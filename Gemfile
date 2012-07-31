@@ -2,5 +2,5 @@ source 'https://rubygems.org'
 
 gem "builder" 
 gem "rdiscount" 
-gem "toto"
+gem "toto", :git => "git://github.com/ixti/toto.git"
 gem "compass"

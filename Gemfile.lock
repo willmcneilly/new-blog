@@ -1,3 +1,12 @@
+GIT
+  remote: git://github.com/ixti/toto.git
+  revision: 5847da2ca5950b129c4c330a1ce023051a4587b6
+  specs:
+    toto (0.4.9)
+      builder
+      rack
+      rdiscount
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -11,10 +20,6 @@ GEM
     rack (1.4.1)
     rdiscount (1.6.8)
     sass (3.1.15)
-    toto (0.4.9)
-      builder
-      rack
-      rdiscount
 
 PLATFORMS
   ruby
@@ -23,4 +28,4 @@ DEPENDENCIES
   builder
   compass
   rdiscount
-  toto
+  toto!

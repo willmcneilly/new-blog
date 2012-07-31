@@ -1,0 +1,11 @@
+<h2><%= page_title! "Articles tagged with #{tag.title}" %></h2>
+<ul>
+  <% for entry in archives %>
+    <li>
+      <a href="<%= entry.path %>"><%= entry.title %></a>
+      <% for tag in entry.tags %>
+        <div class="extra"><a href="/tag/<%= tag %>"><%= tag %></a></div>
+      <% end %>
+    </li>
+  <% end %>
+</ul>
