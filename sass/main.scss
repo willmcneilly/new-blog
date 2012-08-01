@@ -44,16 +44,18 @@ h3 {
 }
 
 a {
-    color: $brandOrange;
+  color: $brandAzure;
 }
 
 a:focus {
-    outline: thin dotted;
+  outline: thin dotted;
 }
 
 a:hover,
 a:active {
-    outline: 0;
+  outline: 0;
+  background-color: $brandOrange;
+  color: #fff;
 }
 
 p,
@@ -127,8 +129,8 @@ pre {
     text-align: center;
     height: 25px;
     &:hover {
-      background-color: #eee;
-      color: #333;
+      background-color: $brandAzure;
+      color: #fff;
       &:after {
         content: "";
         width: 10px;
@@ -137,7 +139,7 @@ pre {
         position: absolute;
         top: 23px;
         left: 44px;
-        background-color: #eee;
+        background-color: inherit;
         @include rotate(45deg);
       }
     }
@@ -221,7 +223,7 @@ pre {
   top:15px;
   //top: 19px;
   //left: 60px;
-  left: 254px;
+  left: 144px;
 
 }
 
@@ -282,10 +284,21 @@ pre {
     //font-size: 36px;
     //line-height: 48px;
     margin-bottom: 24px;
+    display: inline-block;
+
     //letter-spacing: normal;
     a {
       text-decoration: none;
       color: #333;
+      //display: inline-block;
+
+      &:hover {
+        color: #fff;
+        //padding-left: 10px;
+        //position: relative;
+        //left: -10px;
+      }
+      //display: inline-block;
     }
   }
 
