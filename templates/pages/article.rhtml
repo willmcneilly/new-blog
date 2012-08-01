@@ -8,7 +8,14 @@
   </section>
   <footer class="meta">
     <span class="article-date"><%= date %></span>
-    <span><%= tags %></span>
+    <br/>
+    <% unless tags.empty? %>
+      <ul class="tags">
+        <% for tag in tags %>
+          <li><a href="/tag/<%= tag %>"><%= tag %></a></li>
+        <% end %>
+      </ul>
+    <% end %>
   </footer>
 </article>
 
