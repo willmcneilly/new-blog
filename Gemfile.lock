@@ -1,5 +1,5 @@
 GIT
-  remote: git@github.com:willmcneilly/toto.git
+  remote: git://github.com/willmcneilly/toto.git
   revision: 5847da2ca5950b129c4c330a1ce023051a4587b6
   specs:
     toto (0.4.9)

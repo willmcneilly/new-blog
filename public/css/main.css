@@ -110,10 +110,10 @@ pre {
   position: absolute;
   top: 15px;
   left: 15px;
-  -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
   -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
@@ -155,10 +155,10 @@ pre {
   top: 23px;
   left: 44px;
   background-color: inherit;
-  -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
   -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
@@ -192,10 +192,10 @@ pre {
   height: 26px;
   background-color: #fff;
   position: absolute;
-  -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
   -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   top: -14px;
   left: 254px;
@@ -236,28 +236,36 @@ pre {
   height: 26px;
   background-color: #e24718;
   position: absolute;
-  -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
   -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   top: 15px;
   left: 144px;
 }
+/* line 227, ../../sass/main.scss */
+.logo-outer:hover {
+  background-color: #00ada7;
+  top: 13px;
+  left: 142px;
+  width: 30px;
+  height: 30px;
+}
 
-/* line 230, ../../sass/main.scss */
+/* line 237, ../../sass/main.scss */
 .logo-inner {
-  display: none;
   text-indent: -9999px;
-  width: 5px;
-  height: 5px;
-  background-color: #fff;
+  width: 20px;
+  height: 20px;
+  color: #fff;
   position: absolute;
   top: 12px;
   left: 12px;
+  font-size: 10px;
 }
 
-/* line 241, ../../sass/main.scss */
+/* line 248, ../../sass/main.scss */
 .main-content {
   width: 528px;
   position: relative;
@@ -265,82 +273,82 @@ pre {
   float: right;
 }
 
-/* line 248, ../../sass/main.scss */
+/* line 255, ../../sass/main.scss */
 .meta {
   float: left;
   width: 192px;
 }
 
-/* line 253, ../../sass/main.scss */
+/* line 260, ../../sass/main.scss */
 .article-header {
   margin-left: 192px;
 }
-/* line 258, ../../sass/main.scss */
+/* line 265, ../../sass/main.scss */
 .article-header h1 {
   letter-spacing: -1.5px;
 }
 
-/* line 263, ../../sass/main.scss */
+/* line 270, ../../sass/main.scss */
 .lead-in {
   color: #666;
   font-size: 22px;
   line-height: 36px;
 }
 
-/* line 270, ../../sass/main.scss */
+/* line 277, ../../sass/main.scss */
 .read-more {
   text-decoration: none;
 }
 
-/* line 274, ../../sass/main.scss */
+/* line 281, ../../sass/main.scss */
 .index-post {
   margin-bottom: 48px;
   padding-bottom: 48px;
   overflow: auto;
 }
-/* line 280, ../../sass/main.scss */
+/* line 287, ../../sass/main.scss */
 .index-post .article-header {
   margin-left: 0;
 }
-/* line 283, ../../sass/main.scss */
+/* line 290, ../../sass/main.scss */
 .index-post .article-header h1 {
   margin-bottom: 24px;
   display: inline-block;
 }
-/* line 290, ../../sass/main.scss */
+/* line 297, ../../sass/main.scss */
 .index-post .article-header h1 a {
   text-decoration: none;
   color: #333;
 }
-/* line 295, ../../sass/main.scss */
+/* line 302, ../../sass/main.scss */
 .index-post .article-header h1 a:hover {
   color: #fff;
 }
-/* line 305, ../../sass/main.scss */
+/* line 312, ../../sass/main.scss */
 .index-post .main-content {
   float: left;
 }
-/* line 313, ../../sass/main.scss */
+/* line 320, ../../sass/main.scss */
 .index-post .article-date {
   font-size: 14px;
 }
 
-/* line 318, ../../sass/main.scss */
+/* line 325, ../../sass/main.scss */
 .recent-posts {
   width: 528px;
 }
-/* line 320, ../../sass/main.scss */
+/* line 327, ../../sass/main.scss */
 .recent-posts li {
   display: block;
   border-bottom: 1px solid #eee;
 }
-/* line 325, ../../sass/main.scss */
+/* line 332, ../../sass/main.scss */
 .recent-posts .post-link {
   padding: 6px 0px;
   display: block;
   text-decoration: none;
 }
-/* line 331, ../../sass/main.scss */
+/* line 338, ../../sass/main.scss */
 .recent-posts .post-date {
   color: #666;
   display: inline-block;
