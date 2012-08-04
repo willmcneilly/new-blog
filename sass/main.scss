@@ -72,6 +72,31 @@ html, body, #container {
   height: 100%; 
 }
 
+.background-pattern{
+
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 1200px;
+  width: 240px;
+  background-color: #000;
+  background-image: -webkit-linear-gradient(0deg, white 0%, #eee 100%);
+  z-index: 0;
+  &:after {
+    
+    content: "";
+    display: block;
+    height: 1200px;
+    width: 240px;
+    position: absolute;
+    top: 0;
+    left:0;
+    background-image: -webkit-linear-gradient(45deg, white 25%, transparent 25%, transparent 75%, white 75%, white), 
+-webkit-linear-gradient(-45deg, white 25%, transparent 25%, transparent 75%, white 75%, white);
+    background-size:12px 12px;
+  }
+}
+
 body > #container {
   height: auto; 
   min-height: 100%;
@@ -167,6 +192,8 @@ body > #container {
 
 .mast {
   background-color: #333;
+  position:relative;
+  z-index:10;
   font-size: 14px;
   //font-style: italic;
   color: #EEE;
@@ -288,6 +315,7 @@ body > #container {
   color:#666;
   font-size: 22px;
   line-height: 36px;
+  margin: 0;
 }
 
 
@@ -318,6 +346,9 @@ body > #container {
 
       &:hover {
         color: #fff;
+        &:before {
+          content: " ";
+        }
         //padding-left: 10px;
         //position: relative;
         //left: -10px;
@@ -328,11 +359,6 @@ body > #container {
 
   .main-content {
     float: left;
-  }
-  .lead-in {
-    //font-size: 16px;
-    //line-height: 28px;
-    //color: #333;
   }
   .article-date {
     font-size: 14px;
