@@ -68,6 +68,19 @@ pre {
    Scaffolding
    ========================================================================== */
 
+html, body, #container { 
+  height: 100%; 
+}
+
+body > #container {
+  height: auto; 
+  min-height: 100%;
+}
+
+#main { 
+  padding-bottom: 252px; 
+} 
+
 .wrapper {
   margin: 144px 72px;
   width: 768px;
@@ -170,7 +183,11 @@ pre {
   background-color: #333;
   width: 100%;
   //height: 30px;
-  position: absolute;
+  position: relative;
+  overflow: auto;
+  margin-top: -252px; /* negative value of footer height */
+  height: 252px;
+  clear:both;
 
   &:after {
     content: "";

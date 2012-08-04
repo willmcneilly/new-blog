@@ -10,21 +10,25 @@
     <title><%= title %></title>
   </head>
   <body>
-    <header class="mast">
-      <a class="logo-outer" href="/">
-        <div class="logo-inner">W</div>
-      </a>
-      <nav class="global-nav">
-        <ul>
-          <li><a href="/archives">Archives</a></li>
-          <li><a href="/about">About</a></li>
-        </ul>
-      </nav>
-    </header>
-    <div class="wrapper">
-      <section>
-        <%= yield %> 
-      </section>
+    <div id="container">
+      <div id="main">
+        <header class="mast">
+          <a class="logo-outer" href="/">
+            <div class="logo-inner">W</div>
+          </a>
+          <nav class="global-nav">
+            <ul>
+              <li><a href="/archives">Archives</a></li>
+              <li><a href="/about">About</a></li>
+            </ul>
+          </nav>
+        </header>
+        <div class="wrapper">
+          <section>
+            <%= yield %> 
+          </section>
+        </div>
+      </div>
     </div>
     <footer class="global-footer">
       <div class="global-footer-inner">
