@@ -82,7 +82,7 @@ body > #container {
 } 
 
 .wrapper {
-  margin: 144px 72px;
+  margin: 144px 72px 96px 72px;
   width: 768px;
   overflow: auto;
 }
@@ -199,7 +199,7 @@ body > #container {
     position: absolute;
     @include rotate(45deg);
     top:-14px;
-    left: 254px;
+    left: 142px;
   }
   .global-footer-inner {
     margin: 96px 72px;
@@ -296,7 +296,7 @@ body > #container {
 }
 
 .index-post {
-  margin-bottom: 48px;
+  margin-bottom: 24px;
   padding-bottom: 48px;
   overflow: auto;
   //border-bottom: 2px dotted #eee;
