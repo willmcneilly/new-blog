@@ -78,7 +78,7 @@ html, body, #container {
   right: 0;
   top: 0;
   height: 1200px;
-  width: 240px;
+  width: 320px;
   background-color: #000;
   background-image: -webkit-linear-gradient(0deg, white 0%, #eee 100%);
   z-index: 0;
@@ -87,7 +87,7 @@ html, body, #container {
     content: "";
     display: block;
     height: 1200px;
-    width: 240px;
+    width: 320px;
     position: absolute;
     top: 0;
     left:0;
@@ -110,6 +110,8 @@ body > #container {
   margin: 144px 72px 96px 72px;
   width: 768px;
   overflow: auto;
+  position: relative;
+  z-index: 10;
 }
 
 
@@ -121,28 +123,6 @@ body > #container {
 .global-header {
   width: auto; 
   overflow: hidden;
-}
-
-.brand-logo-container {
-  width: 40px;
-  height: 40px;
-  background-color: $brandOrange;
-  position: relative;
-  margin-left: 80px; // + 72px
-  margin-right: 180px;
-  margin-bottom: 120px;
-  float:left;
-  h1 {
-    display: block;
-    text-indent: -9999px;
-    width: 10px;
-    height: 10px;
-    background-color: #fff;
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    @include rotate(45deg);
-  }
 }
 
 .global-nav {
@@ -186,6 +166,7 @@ body > #container {
 
 .article-date {
   font-size: 16px;
+  line-height: 36px;
   color:#666;
 }
 
@@ -257,19 +238,20 @@ body > #container {
 }
 
 .logo-outer {
-  width: 26px;
-  height: 26px;
+  width: 30px;
+  height: 30px;
   //width: 18px;
   //height: 18px;
-  background-color: $brandOrange;
+  
+  background-color: $brandAzure;
   position: absolute;
   @include rotate(45deg);
-  top:15px;
+  top:13px;
   //top: 19px;
   //left: 60px;
-  left: 144px;
+  left: 142px;
   &:hover {
-    background-color: $brandAzure;
+    background-color: $brandOrange;
     top:13px;
     left: 142px;
     width: 30px;
@@ -298,7 +280,7 @@ body > #container {
 
 .meta {
   float: left;
-  width: 192px;
+  width: 180px;
 }
 
 .article-header {
@@ -321,6 +303,8 @@ body > #container {
 
 .read-more {
   text-decoration: none;
+  text-align: right;
+  display: block;
 }
 
 .index-post {
@@ -362,6 +346,19 @@ body > #container {
   }
   .article-date {
     font-size: 14px;
+  }
+}
+
+.tags {
+  li {
+    float: left;
+    margin-right: 5px;
+    line-height: 18px;
+    a {
+      font-size: 12px;
+      text-decoration: none;
+      line-height: 18px;
+    }
   }
 }
 
