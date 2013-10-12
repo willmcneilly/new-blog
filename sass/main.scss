@@ -250,12 +250,14 @@ body > #container {
   //top: 19px;
   //left: 60px;
   left: 142px;
+  transition: all 0.2s ease;
   &:hover {
     background-color: $brandOrange;
     top:13px;
     left: 142px;
     width: 30px;
     height: 30px;
+    -webkit-transform: rotate(225deg);
   }
 
 }
